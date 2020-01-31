@@ -6,6 +6,7 @@ gem 'geocoder'
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
+gem 'puma'
 gem 'rails', '5.2.4.1'
 gem 'redis'
 
@@ -18,7 +19,6 @@ gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
-  gem 'puma'
 end
 
 group :development, :test do
