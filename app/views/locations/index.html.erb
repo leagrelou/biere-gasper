@@ -1,11 +1,11 @@
 <%= render 'shared/banner' %>
 
-<div class="container">
+<div class="personalized-container">
   <h1>Le projet</h1>
   <p>GASPER est une marque de bière au pain pour lutter contre le gaspillage alimentaire. Elle est brassée avec les invendus de pain de vos boulangeries et restaurants.</p>
 </div>
 
-<div class="container">
+<div class="personalized-container">
   <h1>Où trouver les bières Gasper</h1>
   <p>Pour le moment, les points de vente sont à Amiens.</p>
   <div
@@ -15,6 +15,10 @@
   data-markers="<%= @markers.to_json %>"
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
   ></div>
+</div>
+
+<div class="personalized-container">
+  <h1>On parle de Gasper !</h1>
 </div>
 
 <%= render 'shared/footer' %>
