@@ -11,6 +11,21 @@ Location.destroy_all
 
 puts "Creating locations..."
 
+# Martigny Et Fils - 12 Rue Albert Dauphin, 80000 Amiens
+# Cédivins - 660 Bis Avenue du 14 Juillet 1789, 80480 Dury-les-Amiens
+# Cédivins - 1 Allée de Maître Zacharius, 80440 Glisy
+# Jean Trogneux - 1 rue Delambre - 80000 Amiens
+# Jean Trogneux - Parvis de la cathédrale - 80000 Amiens
+# Jean Trogneux - Auchan Galerie marchande – Route de Paris, 8000 Amiens
+# Jean Trogneux - 66 place des héros – 62000 Arras
+# Jean Trogneux - 1 rue Saint André – 02100 Saint-Quentin
+# Jean Trogneux - 74 rue Esquermoise – 59000 Lille
+# Jean Trogneux - 84 rue Saint Jean – 62520 Le Touquet
+# Boulangerie Maxime - 15 rue de Noyon, 80000 Amiens
+# Boulangerie Maxime, 1 avenue de l'Arc, 80330 Longueau
+# Leu Duo - 60 Rue Vanmarcke, 80000 Amiens
+
+
 locations_attributes = [
   {
     name:         'Le Saint-Jean-de-Luz',

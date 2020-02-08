@@ -1,6 +1,7 @@
+<%= render 'shared/navbar' %>
 <%= render 'shared/banner' %>
 
-<div class="personalized-container">
+<div class="personalized-container" id="projet">
   <h1>Le projet</h1>
   <p>GASPER est une marque de bière au pain pour lutter contre le gaspillage alimentaire. Elle est brassée avec les invendus de pain de vos boulangeries et restaurants.</p>
   <div class="cards">
@@ -15,8 +16,8 @@
   </div>
 </div>
 
-<div class="personalized-container">
-  <h1>Où trouver les bières Gasper</h1>
+<div class="personalized-container" id="points-de-vente">
+  <h1>Où trouver nos bières</h1>
   <p>Pour le moment, les points de vente sont à Amiens.</p>
   <div
   id="map"
@@ -27,22 +28,6 @@
   ></div>
 </div>
 
-<div class="personalized-container">
-  <h1>On parle de Gasper !</h1>
-  <div class="card-product">
-    <img src="<%= asset_path "france-inter-logo.png" %>" />
-    <div class="card-product-infos">
-      <h2>La bière du boulanger</h2>
-      <p>Émission L'esprit d'initiave - 27 janvier 2020</p>
-    </div>
-  </div>
-  <div class="card-product">
-    <img src="<%= asset_path "le-figaro-logo.png" %>" />
-    <div class="card-product-infos">
-      <h2>Amiens : contre le gaspillage, un jeune entrepreneur brasse sa bière à partir d’invendus de pain</h2>
-      <p>Le Figaro Économie - 27 janvier 2020</p>
-    </div>
-  </div>
-</div>
+<%= render 'shared/news' %>
 
 <%= render 'shared/footer' %>
