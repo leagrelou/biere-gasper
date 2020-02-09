@@ -27,10 +27,19 @@ const fitMapToMarkers = (map, markers) => {
   map.fitBounds(bounds, { padding: 70, maxZoom: 15 });
 };
 
+// https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol
+const addZoomControl = (map) => {
+  const nav = new mapboxgl.NavigationControl({
+    showCompass: false,
+  });
+  map.addControl(nav, 'top-left');
+};
+
 const initMapbox = () => {
   if (mapElement) {
     const map = buildMap();
     const markers = JSON.parse(mapElement.dataset.markers);
+    addZoomControl(map);
     addMarkersToMap(map, markers);
     fitMapToMarkers(map, markers);
   }

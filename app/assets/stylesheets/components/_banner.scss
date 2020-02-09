@@ -2,16 +2,21 @@
   background-size: cover;
   object-fit: cover;
   background-position: center;
-  padding: 150px 0;
   height: 500px;
+  position: relative;
 }
 
 .banner h1 {
   margin: 0;
-  color: #fdd3e1;
+  color: #02C09E;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+  text-align: left;
+  position: absolute;
+  bottom: 125px;
+  max-width: 350px;
+  padding-right: 16px;
 }
 
 .banner p {
@@ -19,4 +24,11 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .banner {
+    background-position: 62%;
+  }
 }

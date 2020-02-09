@@ -3,13 +3,13 @@
 
 <div class="personalized-container" id="projet">
   <div class="part-title"><h1>Le projet</h1></div>
-  <p>GASPER est une marque de bière au pain pour lutter contre le gaspillage alimentaire. Elle est brassée avec les invendus de pain de vos boulangeries et restaurants.</p>
+  <div class="part-description"><p>GASPER est une marque de bière au pain pour lutter contre le gaspillage alimentaire. Elle est brassée avec les invendus de pain de vos boulangeries et restaurants.</p></div>
   <div class="cards">
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path "pain-card.png" %>);">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path "pain-card_optimized.jpg" %>);">
       <h1>1000</h1>
       <p>Baguettes sauvées du gaspillage alimentaire</p>
     </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path "gasper-card.png" %>);">
+    <div id="sold-beers" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path "banner_photo_optimized.jpg" %>);">
       <h1>1000</h1>
       <p>Bières vendues</p>
     </div>
@@ -18,13 +18,11 @@
 
 <div class="personalized-container" id="points-de-vente">
   <div class="part-title"><h1>Où trouver nos bières</h1></div>
-  <p>Pour le moment, les points de vente sont à Amiens.</p>
+  <div class="part-description"><p>Pour le moment, les points de vente sont à Amiens.</p></div>
   <div
-  id="map"
-  style="width: 90%;
-  height: 300px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+    id="map"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
   ></div>
 </div>
 
