@@ -2,20 +2,35 @@
   background-size: cover;
   object-fit: cover;
   background-position: center;
-  height: 500px;
+  height: 800px;
   position: relative;
 }
 
-.banner h1 {
+#white {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 65px;
+  font-weight: bold;
+  font-family: 'Khula 800';
+  text-align: left;
+  position: absolute;
+  bottom: 375px;
+  max-width: 400px;
+  padding-right: 16px;
+}
+
+#green {
   margin: 0;
   color: #02C09E;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 80px;
   font-weight: bold;
+  font-family: 'Khula 800';
   text-align: left;
   position: absolute;
-  bottom: 125px;
-  max-width: 350px;
+  bottom: 250px;
+  max-width: 450px;
   padding-right: 16px;
 }
 

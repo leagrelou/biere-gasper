@@ -17,6 +17,11 @@
   }
 }
 
+#first-inside-box {
+  display: flex;
+  justify-content: center;
+}
+
 .card-category {
   background-size: cover;
   background-position: center;
